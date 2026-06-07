@@ -1,6 +1,124 @@
-Ummiby
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-Islamic resources, reflections, and tools.
+  <title>Ummiby</title>
 
-[ Suratul Kahf Reader ]
-[ Coming Soon ]
+  <style>
+    :root {
+      --bg: #f8f5f2;
+      --card: #ffffff;
+      --ink: #2f2f2f;
+      --muted: #666666;
+      --accent: #7d9c8b;
+      --border: #e7e2dc;
+      --shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 720px;
+      width: 100%;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .header h1 {
+      font-size: clamp(2.2rem, 7vw, 3.5rem);
+      margin-bottom: 0.6rem;
+    }
+
+    .header p {
+      color: var(--muted);
+      line-height: 1.6;
+      font-size: 1.05rem;
+    }
+
+    .card {
+      display: block;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      text-decoration: none;
+      color: inherit;
+      transition: 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+    }
+
+    .card-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-description {
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 2rem;
+      color: #888;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Ummiby</h1>
+      <p>
+        Simple tools for remembrance, reflection, and benefiting from the Qur'an and Sunnah.
+      </p>
+    </header>
+
+    <a href="https://ampmduaas.ummiby.com" class="card">
+      <div class="card-title">🌅 Morning & Evening Duaas</div>
+      <div class="card-description">
+        A swipe-card reader for authentic morning and evening adhkar, including Arabic,
+        transliteration, meanings, virtues, and sources.
+      </div>
+    </a>
+
+    <a href="https://suratulkahf.ummiby.com" class="card">
+      <div class="card-title">📖 Suratul Kahf Reader</div>
+      <div class="card-description">
+        Read Surah al-Kahf with Arabic, translation, transliteration, and a focused reading experience.
+      </div>
+    </a>
+
+    <footer class="footer">
+      More tools coming soon, in shaa Allah.
+    </footer>
+  </main>
+</body>
+</html>
