@@ -1,308 +1,419 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ummiby Sanctuary</title>
 
-  <title>Ummiby | Remembrance & Reflection</title>
+<style>
+:root {
+  --cream: #f8f3ea;
+  --soft: #fffdf8;
+  --sage: #6f7f4f;
+  --sage-dark: #3d4b31;
+  --line: #ddd2bf;
+  --text: #1f241b;
+  --muted: #62685b;
+  --gold: #d9b879;
+}
 
-  <style>
-    :root {
-      --ink: #2f2630;
-      --muted: #6d5d67;
-      --cream: #fffaf7;
-      --glass: rgba(255, 255, 255, 0.74);
-      --border: rgba(255, 255, 255, 0.7);
-      --sage: #8fbfaf;
-      --deep-sage: #5f8f80;
-      --lilac: #d8d2f0;
-      --lav: #a99bd8;
-      --shadow: 0 22px 70px rgba(76, 45, 82, 0.16);
-    }
+* {
+  box-sizing: border-box;
+}
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--text);
+  background: linear-gradient(135deg, #f7efe2, #fffaf1);
+}
 
-    body {
-      min-height: 100vh;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: var(--ink);
-      background:
-        radial-gradient(circle at 15% 15%, rgba(255,255,255,.9), transparent 24rem),
-        radial-gradient(circle at 82% 12%, rgba(216,210,240,.92), transparent 25rem),
-        radial-gradient(circle at 20% 88%, rgba(207,232,223,.95), transparent 24rem),
-        linear-gradient(135deg, #fffaf2 0%, #edf7f1 46%, #eeeafe 100%);
-      padding: 22px;
-    }
+.app {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+}
 
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      background-image:
-        radial-gradient(circle, rgba(255,255,255,.75) 0 2px, transparent 2px),
-        radial-gradient(circle, rgba(255,255,255,.45) 0 1px, transparent 1px);
-      background-size: 54px 54px, 31px 31px;
-      opacity: .45;
-    }
+/* SIDEBAR */
 
-    .page {
-      width: min(980px, 100%);
-      margin: 0 auto;
-      min-height: calc(100vh - 44px);
-      display: grid;
-      align-content: center;
-      gap: 22px;
-      position: relative;
-      z-index: 1;
-    }
+.sidebar {
+  background: rgba(255, 253, 248, 0.85);
+  border-right: 1px solid var(--line);
+  padding: 32px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 
-    .hero {
-      background: var(--glass);
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow);
-      backdrop-filter: blur(18px);
-      border-radius: 34px;
-      overflow: hidden;
-    }
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-    .hero-image {
-      min-height: 230px;
-      display: grid;
-      place-items: center;
-      text-align: center;
-      padding: 42px 24px;
-      background:
-        linear-gradient(rgba(255,255,255,.08), rgba(255,255,255,.58)),
-        radial-gradient(circle at 50% 20%, rgba(255,255,255,.95), transparent 10rem),
-        linear-gradient(135deg, #d8d2f0 0%, #cfe8df 48%, #fff2df 100%);
-    }
+.logo .mark {
+  font-size: 42px;
+  color: var(--sage);
+}
 
-    .hero-symbol {
-      font-size: clamp(3rem, 10vw, 6rem);
-      margin-bottom: 8px;
-    }
+.logo h1 {
+  margin: 6px 0 0;
+  font-size: 38px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: var(--sage-dark);
+}
 
-    .hero h1 {
-      font-size: clamp(2.4rem, 8vw, 5rem);
-      line-height: 1;
-      letter-spacing: -0.05em;
-      margin-bottom: 10px;
-    }
+.logo p {
+  margin: 4px 0 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
 
-    .hero h2 {
-      font-size: clamp(1.1rem, 3.4vw, 1.55rem);
-      font-weight: 700;
-      color: #4f6f65;
-      margin-bottom: 14px;
-    }
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
-    .hero p {
-      max-width: 620px;
-      margin: 0 auto;
-      color: var(--muted);
-      line-height: 1.65;
-      font-size: 1.05rem;
-    }
+.nav a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 18px;
+  padding: 16px 18px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
 
-    .date-row {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 12px;
-      padding: 18px;
-      background: rgba(255,255,255,.35);
-      border-top: 1px solid rgba(255,255,255,.65);
-    }
+.nav a.active,
+.nav a:hover {
+  background: #e9e8d9;
+  color: var(--sage-dark);
+}
 
-    .date-card {
-      background: rgba(255,255,255,.62);
-      border: 1px solid rgba(255,255,255,.75);
-      border-radius: 22px;
-      padding: 16px;
-      text-align: center;
-    }
+.sidebar-note {
+  margin-top: auto;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 24px;
+  text-align: center;
+  background: #fffaf2;
+  line-height: 1.5;
+  font-size: 16px;
+}
 
-    .date-label {
-      text-transform: uppercase;
-      letter-spacing: .16em;
-      font-size: .72rem;
-      color: #627b72;
-      font-weight: 800;
-      margin-bottom: 6px;
-    }
+/* MAIN */
 
-    .date-value {
-      font-size: clamp(1rem, 3vw, 1.25rem);
-      font-weight: 800;
-    }
+.main {
+  padding: 34px;
+}
 
-    .date-note {
-      margin-top: 6px;
-      font-size: .78rem;
-      color: #806e78;
-    }
+.hero {
+  min-height: 300px;
+  border-radius: 28px;
+  padding: 56px;
+  background:
+    linear-gradient(to right, rgba(248,243,234,0.9), rgba(248,243,234,0.45)),
+    url("https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 16px;
-    }
+.hero h2 {
+  font-size: 46px;
+  font-weight: 400;
+  margin: 0 0 14px;
+  color: var(--sage-dark);
+}
 
-    .tool-card {
-      display: grid;
-      gap: 12px;
-      background: var(--glass);
-      border: 1px solid var(--border);
-      border-radius: 28px;
-      padding: 24px;
-      color: inherit;
-      text-decoration: none;
-      box-shadow: 0 14px 42px rgba(76, 45, 82, 0.1);
-      backdrop-filter: blur(16px);
-      transition: transform .2s ease, box-shadow .2s ease;
-    }
+.hero p {
+  max-width: 420px;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #3d4038;
+}
 
-    .tool-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 20px 54px rgba(76, 45, 82, 0.16);
-    }
+.date-pill {
+  margin: -32px auto 30px;
+  max-width: 720px;
+  position: relative;
+  z-index: 5;
+  background: rgba(255,255,255,0.9);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 18px 26px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 12px 30px rgba(80,70,50,0.12);
+}
 
-    .tool-icon {
-      font-size: 2.2rem;
-    }
+/* CARDS */
 
-    .tool-card h3 {
-      font-size: 1.35rem;
-      line-height: 1.15;
-    }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  gap: 22px;
+}
 
-    .tool-card p {
-      color: var(--muted);
-      line-height: 1.55;
-    }
+.card {
+  background: rgba(255,253,248,0.9);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 30px 24px;
+  text-align: center;
+  min-height: 260px;
+  box-shadow: 0 10px 24px rgba(80,70,50,0.06);
+}
 
-    .open-link {
-      color: var(--deep-sage);
-      font-weight: 900;
-      margin-top: 4px;
-    }
+.icon {
+  width: 92px;
+  height: 92px;
+  border-radius: 50% 50% 8px 8px;
+  margin: 0 auto 18px;
+  display: grid;
+  place-items: center;
+  font-size: 42px;
+  background: #eee4d2;
+}
 
-    footer {
-      text-align: center;
-      color: #806e78;
-      font-size: .92rem;
-      padding: 8px 0 0;
-    }
+.card h3 {
+  font-size: 28px;
+  font-weight: 400;
+  margin: 0 0 12px;
+}
 
-    @media (max-width: 720px) {
-      body {
-        padding: 14px;
-      }
+.card p {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--muted);
+  margin-bottom: 24px;
+}
 
-      .page {
-        min-height: calc(100vh - 28px);
-        align-content: start;
-        padding-top: 10px;
-      }
+.card a {
+  display: inline-block;
+  text-decoration: none;
+  background: var(--sage);
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 11px 28px;
+  border-radius: 999px;
+}
 
-      .hero {
-        border-radius: 28px;
-      }
+.card a:hover {
+  background: var(--sage-dark);
+}
 
-      .hero-image {
-        min-height: 210px;
-        padding: 34px 18px;
-      }
+/* VERSE */
 
-      .date-row,
-      .cards {
-        grid-template-columns: 1fr;
-      }
+.verse {
+  margin-top: 24px;
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 28px;
+  background: linear-gradient(120deg, #f6f1e7, #fffaf1);
+}
 
-      .tool-card {
-        border-radius: 24px;
-        padding: 21px;
-      }
-    }
-  </style>
+.verse h3 {
+  margin-top: 0;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.arabic {
+  font-size: 28px;
+  line-height: 1.8;
+  direction: rtl;
+  text-align: right;
+}
+
+.translation {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+/* FOOTER NOTE */
+
+.bottom-note {
+  margin-top: 18px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 16px 22px;
+  background: rgba(255,253,248,0.8);
+  font-family: Arial, sans-serif;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .app {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 34px;
+  }
+
+  .hero h2 {
+    font-size: 34px;
+  }
+
+  .date-pill {
+    flex-direction: column;
+    align-items: center;
+    border-radius: 24px;
+  }
+}
+</style>
 </head>
 
 <body>
-  <main class="page">
+
+<div class="app">
+
+  <aside class="sidebar">
+    <div class="logo">
+      <div class="mark">☾</div>
+      <h1>ummiby</h1>
+      <p>Sanctuary</p>
+    </div>
+
+    <nav class="nav">
+      <a class="active" href="#">⌂ Home</a>
+      <a href="#">☼ Morning Duaas</a>
+      <a href="#">☀ Evening Duaas</a>
+      <a href="#">♡ Daily Duaa</a>
+      <a href="#">☾ Before Sleep</a>
+      <a href="#">📖 Suratul Kahf</a>
+      <a href="#">▥ Islamic Library</a>
+    </nav>
+
+    <div class="sidebar-note">
+      And remember your Lord within yourself in humility and fear.
+      <br><br>
+      <strong>Qur’an 7:205</strong>
+    </div>
+  </aside>
+
+  <main class="main">
+
     <section class="hero">
-      <div class="hero-image">
-        <div>
-          <div class="hero-symbol">🌙</div>
-          <h1>Ummiby</h1>
-          <h2>Remembrance & Reflection</h2>
-          <p>
-            Simple tools for daily adhkar, Qur’an reading, and quiet moments of reflection.
-          </p>
-        </div>
-      </div>
-
-      <div class="date-row">
-        <div class="date-card">
-          <div class="date-label">Today</div>
-          <div class="date-value" id="todayDate">Loading...</div>
-        </div>
-
-        <div class="date-card">
-          <div class="date-label">Hijri Date</div>
-          <div class="date-value" id="hijriDate">Loading...</div>
-          <div class="date-note">Approximate; may vary by moon sighting.</div>
-        </div>
-      </div>
+      <h2>Assalamu Alaikum,<br>Sherrie ♥</h2>
+      <p>A quiet space to remember, reflect, and reconnect.</p>
     </section>
 
-    <section class="cards" aria-label="Ummiby tools">
-      <a href="https://ampmduaas.ummiby.com" class="tool-card">
-        <div class="tool-icon">🌅</div>
-        <h3>Morning & Evening Duaas</h3>
-        <p>
-          A calm swipe-card reader for authentic morning and evening adhkar, with Arabic,
-          transliteration, meanings, virtues, and sources.
-        </p>
-        <div class="open-link">Open app →</div>
-      </a>
+    <div class="date-pill">
+      <span id="todayDate">Sunday, June 7, 2026</span>
+      <span id="hijriDate">11 Dhul Hijjah 1447 AH</span>
+      <span>▦</span>
+    </div>
 
-      <a href="https://suratul-kahf.ummiby.com" class="tool-card">
-        <div class="tool-icon">📖</div>
-        <h3>Suratul Kahf Reader</h3>
-        <p>
-          A gentle reader for Surah al-Kahf, made for focused Friday reading and reflection.
-        </p>
-        <div class="open-link">Open reader →</div>
-      </a>
+    <section class="grid">
+
+      <div class="card">
+        <div class="icon">🌄</div>
+        <h3>Morning Duaas</h3>
+        <p>Start your day with beautiful remembrances and supplications.</p>
+        <a href="#">Read Now</a>
+      </div>
+
+      <div class="card">
+        <div class="icon">🌅</div>
+        <h3>Evening Duaas</h3>
+        <p>End your day with remembrance, gratitude, and calm.</p>
+        <a href="#">Read Now</a>
+      </div>
+
+      <div class="card">
+        <div class="icon">🌿</div>
+        <h3>Daily Duaa</h3>
+        <p>A new duaa each day to read, reflect, and make your own.</p>
+        <a href="#">Read Today</a>
+      </div>
+
+      <div class="card">
+        <div class="icon">🌙</div>
+        <h3>Before Sleep</h3>
+        <p>Adhkar and duaas to help you end your day remembering Allah.</p>
+        <a href="#">Read Now</a>
+      </div>
+
+      <div class="card">
+        <div class="icon">📖</div>
+        <h3>Suratul Kahf</h3>
+        <p>Read and reflect on the light of Surah Kahf every Friday.</p>
+        <a href="#">Read Now</a>
+      </div>
+
+      <div class="card">
+        <div class="icon">📚</div>
+        <h3>Islamic Library</h3>
+        <p>Your collection of notes, resources, and beneficial reminders.</p>
+        <a href="#">Explore</a>
+      </div>
+
     </section>
 
-    <footer>
-      More tools coming soon, in shaa Allah.
-    </footer>
+    <section class="verse">
+      <h3>Daily Verse</h3>
+      <div class="arabic">وَمَن يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ</div>
+      <p class="translation">
+        And whoever relies upon Allah — then He is sufficient for him.
+        <br>
+        <strong>Qur’an 65:3</strong>
+      </p>
+    </section>
+
+    <div class="bottom-note">
+      Take it slow. You’re not behind. What matters is turning to Allah, one moment at a time.
+    </div>
+
   </main>
 
-  <script>
-    const todayDate = document.getElementById("todayDate");
-    const hijriDate = document.getElementById("hijriDate");
+</div>
 
-    const now = new Date();
+<script>
+const dateOptions = {
+  weekday: "long",
+  year: "numeric",
+  month: "long",
+  day: "numeric"
+};
 
-    todayDate.textContent = new Intl.DateTimeFormat("en-US", {
-      weekday: "long",
-      month: "long",
+document.getElementById("todayDate").textContent =
+  new Date().toLocaleDateString("en-US", dateOptions);
+
+// Basic browser Hijri date display
+try {
+  document.getElementById("hijriDate").textContent =
+    new Intl.DateTimeFormat("en-TN-u-ca-islamic", {
       day: "numeric",
-      year: "numeric"
-    }).format(now);
-
-    hijriDate.textContent = new Intl.DateTimeFormat("en-US-u-ca-islamic", {
-      day: "numeric",
       month: "long",
       year: "numeric"
-    }).format(now);
-  </script>
+    }).format(new Date()) + " AH";
+} catch {
+  document.getElementById("hijriDate").textContent = "Hijri date unavailable";
+}
+</script>
+
 </body>
 </html>
