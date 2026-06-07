@@ -4,17 +4,20 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Ummiby</title>
+  <title>Ummiby | Remembrance & Reflection</title>
 
   <style>
     :root {
-      --bg: #f8f5f2;
-      --card: #ffffff;
-      --ink: #2f2f2f;
-      --muted: #666666;
-      --accent: #7d9c8b;
-      --border: #e7e2dc;
-      --shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+      --ink: #2f2630;
+      --muted: #6d5d67;
+      --cream: #fffaf7;
+      --glass: rgba(255, 255, 255, 0.74);
+      --border: rgba(255, 255, 255, 0.7);
+      --sage: #8fbfaf;
+      --deep-sage: #5f8f80;
+      --lilac: #d8d2f0;
+      --lav: #a99bd8;
+      --shadow: 0 22px 70px rgba(76, 45, 82, 0.16);
     }
 
     * {
@@ -24,101 +27,282 @@
     }
 
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
-      color: var(--ink);
       min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 15% 15%, rgba(255,255,255,.9), transparent 24rem),
+        radial-gradient(circle at 82% 12%, rgba(216,210,240,.92), transparent 25rem),
+        radial-gradient(circle at 20% 88%, rgba(207,232,223,.95), transparent 24rem),
+        linear-gradient(135deg, #fffaf2 0%, #edf7f1 46%, #eeeafe 100%);
+      padding: 22px;
     }
 
-    .container {
-      max-width: 720px;
-      width: 100%;
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image:
+        radial-gradient(circle, rgba(255,255,255,.75) 0 2px, transparent 2px),
+        radial-gradient(circle, rgba(255,255,255,.45) 0 1px, transparent 1px);
+      background-size: 54px 54px, 31px 31px;
+      opacity: .45;
     }
 
-    .header {
+    .page {
+      width: min(980px, 100%);
+      margin: 0 auto;
+      min-height: calc(100vh - 44px);
+      display: grid;
+      align-content: center;
+      gap: 22px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero {
+      background: var(--glass);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+      border-radius: 34px;
+      overflow: hidden;
+    }
+
+    .hero-image {
+      min-height: 230px;
+      display: grid;
+      place-items: center;
       text-align: center;
-      margin-bottom: 2rem;
+      padding: 42px 24px;
+      background:
+        linear-gradient(rgba(255,255,255,.08), rgba(255,255,255,.58)),
+        radial-gradient(circle at 50% 20%, rgba(255,255,255,.95), transparent 10rem),
+        linear-gradient(135deg, #d8d2f0 0%, #cfe8df 48%, #fff2df 100%);
     }
 
-    .header h1 {
-      font-size: clamp(2.2rem, 7vw, 3.5rem);
-      margin-bottom: 0.6rem;
+    .hero-symbol {
+      font-size: clamp(3rem, 10vw, 6rem);
+      margin-bottom: 8px;
     }
 
-    .header p {
+    .hero h1 {
+      font-size: clamp(2.4rem, 8vw, 5rem);
+      line-height: 1;
+      letter-spacing: -0.05em;
+      margin-bottom: 10px;
+    }
+
+    .hero h2 {
+      font-size: clamp(1.1rem, 3.4vw, 1.55rem);
+      font-weight: 700;
+      color: #4f6f65;
+      margin-bottom: 14px;
+    }
+
+    .hero p {
+      max-width: 620px;
+      margin: 0 auto;
       color: var(--muted);
-      line-height: 1.6;
+      line-height: 1.65;
       font-size: 1.05rem;
     }
 
-    .card {
-      display: block;
-      background: var(--card);
-      border: 1px solid var(--border);
+    .date-row {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      padding: 18px;
+      background: rgba(255,255,255,.35);
+      border-top: 1px solid rgba(255,255,255,.65);
+    }
+
+    .date-card {
+      background: rgba(255,255,255,.62);
+      border: 1px solid rgba(255,255,255,.75);
       border-radius: 22px;
-      padding: 1.5rem;
-      margin-bottom: 1rem;
-      text-decoration: none;
-      color: inherit;
-      transition: 0.2s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-2px);
-      box-shadow: var(--shadow);
-    }
-
-    .card-title {
-      font-size: 1.35rem;
-      font-weight: 700;
-      margin-bottom: 0.5rem;
-    }
-
-    .card-description {
-      color: var(--muted);
-      line-height: 1.6;
-    }
-
-    .footer {
+      padding: 16px;
       text-align: center;
-      margin-top: 2rem;
-      color: #888;
-      font-size: 0.9rem;
+    }
+
+    .date-label {
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      font-size: .72rem;
+      color: #627b72;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .date-value {
+      font-size: clamp(1rem, 3vw, 1.25rem);
+      font-weight: 800;
+    }
+
+    .date-note {
+      margin-top: 6px;
+      font-size: .78rem;
+      color: #806e78;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .tool-card {
+      display: grid;
+      gap: 12px;
+      background: var(--glass);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 24px;
+      color: inherit;
+      text-decoration: none;
+      box-shadow: 0 14px 42px rgba(76, 45, 82, 0.1);
+      backdrop-filter: blur(16px);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .tool-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 20px 54px rgba(76, 45, 82, 0.16);
+    }
+
+    .tool-icon {
+      font-size: 2.2rem;
+    }
+
+    .tool-card h3 {
+      font-size: 1.35rem;
+      line-height: 1.15;
+    }
+
+    .tool-card p {
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .open-link {
+      color: var(--deep-sage);
+      font-weight: 900;
+      margin-top: 4px;
+    }
+
+    footer {
+      text-align: center;
+      color: #806e78;
+      font-size: .92rem;
+      padding: 8px 0 0;
+    }
+
+    @media (max-width: 720px) {
+      body {
+        padding: 14px;
+      }
+
+      .page {
+        min-height: calc(100vh - 28px);
+        align-content: start;
+        padding-top: 10px;
+      }
+
+      .hero {
+        border-radius: 28px;
+      }
+
+      .hero-image {
+        min-height: 210px;
+        padding: 34px 18px;
+      }
+
+      .date-row,
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .tool-card {
+        border-radius: 24px;
+        padding: 21px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <main class="container">
-    <header class="header">
-      <h1>Ummiby's Islamic Tools</h1>
-      <p>
-        Simple tools for remembrance, reflection, and benefiting from the Qur'an and Sunnah.
-      </p>
-    </header>
-
-    <a href="https://ampmduaas.ummiby.com" class="card">
-      <div class="card-title">🌅 Morning & Evening Duaas</div>
-      <div class="card-description">
-        A swipe-card reader for authentic morning and evening adhkar, including Arabic,
-        transliteration, meanings, virtues, and sources.
+  <main class="page">
+    <section class="hero">
+      <div class="hero-image">
+        <div>
+          <div class="hero-symbol">🌙</div>
+          <h1>Ummiby</h1>
+          <h2>Remembrance & Reflection</h2>
+          <p>
+            Simple tools for daily adhkar, Qur’an reading, and quiet moments of reflection.
+          </p>
+        </div>
       </div>
-    </a>
 
-    <a href="https://simplyummiby-collab.github.io/surah-kahf-app/" class="card">
-      <div class="card-title">📖 Suratul Kahf Reader</div>
-      <div class="card-description">
-        Read Surah al-Kahf with Arabic, translation, transliteration, and a focused reading experience.
+      <div class="date-row">
+        <div class="date-card">
+          <div class="date-label">Today</div>
+          <div class="date-value" id="todayDate">Loading...</div>
+        </div>
+
+        <div class="date-card">
+          <div class="date-label">Hijri Date</div>
+          <div class="date-value" id="hijriDate">Loading...</div>
+          <div class="date-note">Approximate; may vary by moon sighting.</div>
+        </div>
       </div>
-    </a>
+    </section>
 
-    <footer class="footer">
+    <section class="cards" aria-label="Ummiby tools">
+      <a href="https://ampmduaas.ummiby.com" class="tool-card">
+        <div class="tool-icon">🌅</div>
+        <h3>Morning & Evening Duaas</h3>
+        <p>
+          A calm swipe-card reader for authentic morning and evening adhkar, with Arabic,
+          transliteration, meanings, virtues, and sources.
+        </p>
+        <div class="open-link">Open app →</div>
+      </a>
+
+      <a href="https://suratulkahf.ummiby.com" class="tool-card">
+        <div class="tool-icon">📖</div>
+        <h3>Suratul Kahf Reader</h3>
+        <p>
+          A gentle reader for Surah al-Kahf, made for focused Friday reading and reflection.
+        </p>
+        <div class="open-link">Open reader →</div>
+      </a>
+    </section>
+
+    <footer>
       More tools coming soon, in shaa Allah.
     </footer>
   </main>
+
+  <script>
+    const todayDate = document.getElementById("todayDate");
+    const hijriDate = document.getElementById("hijriDate");
+
+    const now = new Date();
+
+    todayDate.textContent = new Intl.DateTimeFormat("en-US", {
+      weekday: "long",
+      month: "long",
+      day: "numeric",
+      year: "numeric"
+    }).format(now);
+
+    hijriDate.textContent = new Intl.DateTimeFormat("en-US-u-ca-islamic", {
+      day: "numeric",
+      month: "long",
+      year: "numeric"
+    }).format(now);
+  </script>
 </body>
 </html>
