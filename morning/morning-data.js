@@ -29,7 +29,8 @@ const morningDuaas = [
 8. For indeed, none forgives sins except You.`,
     virtues: "Whoever says it during the day with firm faith in it and dies before evening will be from the people of Paradise; and whoever says it at night with firm faith in it and dies before morning will be from the people of Paradise.",
     reference: "Sahih al-Bukhari 6306, 6323",
-    grade: "Sahih"
+    grade: "Sahih",
+    explore: []
   },
 
   {
@@ -68,7 +69,8 @@ const morningDuaas = [
 10. And from punishment in the grave.`,
     virtues: "",
     reference: "Sahih Muslim 2723",
-    grade: "Sahih"
+    grade: "Sahih",
+    explore: []
   },
 
   {
@@ -92,7 +94,8 @@ const morningDuaas = [
 5. And as plentiful as His Words.`,
     virtues: "The Prophet ﷺ said: “I recited four words three times after I left you; if these are weighed against what you have recited since morning, these would outweigh them.”",
     reference: "Sahih Muslim 2726",
-    grade: "Sahih"
+    grade: "Sahih",
+    explore: []
   },
     {
     label: "Recite Sūrah al-Ikhlāṣ, al-Falaq, and an-Nās.",
@@ -107,7 +110,8 @@ Recite Sūrah al-Falaq - 3x.
 Recite Sūrah an-Nās - 3x`,
     virtues: "The Prophet ﷺ said to recite Sūrah al-Ikhlāṣ and al-Muʿawwidhatayn three times in the morning and evening; “they will serve you for every purpose.”",
     reference: "Sunan Abi Dawud 5082; Jami at-Tirmidhi 3575",
-    grade: "Sahih"
+    grade: "Sahih",
+    explore: []
   },
 
   {
@@ -131,7 +135,8 @@ Recite Sūrah an-Nās - 3x`,
 5. And to You is the Resurrection.`,
     virtues: "",
     reference: "Sunan Abi Dawud 5068",
-    grade: "Hasan"
+    grade: "Hasan",
+    explore: []
   },
 
   {
@@ -156,7 +161,8 @@ Recite Sūrah an-Nās - 3x`,
 6. the All-Knowing.`,
     virtues: "Whoever says this three times in the evening will not suffer sudden affliction until morning; and whoever says it in the morning will not suffer sudden affliction until evening.",
     reference: "Sunan Abi Dawud 5088; Jami at-Tirmidhi 3388",
-    grade: "Sahih"
+    grade: "Sahih",
+    explore: []
   },
 
   {
@@ -192,7 +198,8 @@ Recite Sūrah an-Nās - 3x`,
 9. and I seek refuge in Your Greatness from being unexpectedly destroyed from beneath me.`,
     virtues: "The Messenger of Allah ﷺ never failed to utter these supplications in the evening and in the morning.",
     reference: "Sunan Abi Dawud 5074",
-    grade: "Sahih"
+    grade: "Sahih",
+    explore: []
   },
   {
     label: "None has the right to be worshipped except Allah alone, having no partner.",
@@ -212,7 +219,8 @@ Recite Sūrah an-Nās - 3x`,
 4. And He has power over all things.`,
     virtues: "Whoever says this in the morning will receive reward like freeing a slave, ten good deeds will be recorded, ten sins erased, he will be raised ten degrees, and he will be guarded from Shaytan until evening.",
     reference: "Sunan Abi Dawud 5077",
-    grade: "Sahih"
+    grade: "Sahih",
+    explore: []
   },
 
   {
@@ -245,7 +253,8 @@ Recite Sūrah an-Nās - 3x`,
 8. Or bringing it upon a Muslim.`,
     virtues: "The Prophet ﷺ instructed Abu Bakr as-Siddiq to say this in the morning and in the evening.",
     reference: "Sunan Abi Dawud 5067",
-    grade: "Sahih"
+    grade: "Sahih",
+    explore: []
   },
 
   {
@@ -260,7 +269,8 @@ Recite Sūrah an-Nās - 3x`,
 2. And I bear witness that none has the right to be worshipped except Allah.`,
     virtues: "",
     reference: "An-Nasa'i, As-Sunan al-Kubra 10331",
-    grade: "Hasan"
+    grade: "Hasan",
+    explore: []
   },
 
   {
@@ -287,7 +297,8 @@ Recite Sūrah an-Nās - 3x`,
 6. And he was not from those who associate others with Allah.`,
     virtues: "",
     reference: "Musnad Ahmad 21144",
-    grade: "Sahih"
+    grade: "Sahih",
+    explore: []
   },
     {
     label: "O Allah, grant me health in my body.",
@@ -307,7 +318,8 @@ Recite Sūrah an-Nās - 3x`,
 4. None has the right to be worshipped except You.`,
     virtues: "",
     reference: "Sunan Abi Dawud 5090",
-    grade: "Hasan"
+    grade: "Hasan",
+    explore: []
   },
 
   {
@@ -325,7 +337,8 @@ Recite Sūrah an-Nās - 3x`,
 3. And with Muhammad as my Prophet.`,
     virtues: "Whoever says this in the morning and evening, Allah will certainly please him.",
     reference: "Sunan Abi Dawud 5072; Jami at-Tirmidhi 3389",
-    grade: "Hasan"
+    grade: "Hasan",
+    explore: []
   },
 
   {
@@ -346,7 +359,8 @@ Recite Sūrah an-Nās - 3x`,
 4. And He is the Lord of the Magnificent Throne.`,
     virtues: "Whoever says this seven times in the morning and evening, Allah will suffice him regarding all that concerns him.",
     reference: "Sunan Abi Dawud 5081",
-    grade: "Hasan"
+    grade: "Hasan",
+    explore: []
   },
 
   {
@@ -367,7 +381,8 @@ Recite Sūrah an-Nās - 3x`,
 4. And do not entrust me to myself for the blink of an eye.`,
     virtues: "Whenever a matter would distress him, the Prophet ﷺ would say: 'O Living, O Self-Sustaining Sustainer! In Your Mercy do I seek relief.'",
     reference: "Jami at-Tirmidhi 3524",
-    grade: "Hasan"
+    grade: "Hasan",
+    explore: []
   },
 
   {
@@ -403,6 +418,7 @@ Recite Sūrah an-Nās - 3x`,
 9. And He is the Most High, the Magnificent.`,
     virtues: "Whoever recites Ayat al-Kursi in the morning will be protected until evening.",
     reference: "Qur'an 2:255",
-    grade: "N/A"
-  }// I’ll send the rest in the next message so the file is easier to paste safely.
+    grade: "N/A",
+    explore: []
+  }
 ];
