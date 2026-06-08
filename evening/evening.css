@@ -137,13 +137,19 @@
 
 
 .arabic-line {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 34px 1fr;
   gap: 14px;
+  align-items: flex-start;
+  direction: rtl;
+  text-align: right;
   margin-bottom: 14px;
 }
 
+.arabic-line span:last-child {
+  text-align: right;
+  direction: rtl;
+}
 .ayah-number {
   flex: 0 0 auto;
   width: 34px;
