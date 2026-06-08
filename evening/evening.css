@@ -131,7 +131,7 @@
 
 .read-row {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   margin-top: 26px;
 }
 
