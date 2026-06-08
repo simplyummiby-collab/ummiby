@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   <div class="progress-actions split">
   <button class="reader-btn subtle-btn" id="resetEveningProgressBtn">Reset</button>
-  <button class="reader-btn" id="continueReadingBtn">Continue Reading</button>
+  <button class="reader-btn" id="continueReadingBtn">Go to Next Unread</button>
 </div>
 `;
 
