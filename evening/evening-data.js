@@ -491,10 +491,9 @@ explore: []
     transliteration: `1. A'udhu bikalimatillahit-tammat
 2. Min sharri ma khalaq`,
     virtues: "Whoever says this when stopping at a place, nothing will harm him until he leaves that place.",
-    reference: "Sahih Muslim 2708",
+      reference: "Sahih Muslim 2708",
     grade: "Sahih",
-
-   
-]
+    explore: []
   }
+  ];
 ];
