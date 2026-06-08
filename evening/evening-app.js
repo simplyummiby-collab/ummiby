@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     progressBox.innerHTML = `
       <h3>${completedCount} of ${eveningDuaas.length} Read (${percent}%)</h3>
-      <p>Your progress saves for today and resets automatically tomorrow.</p>
+         <p>Your progress is stored locally on this device only. It remains saved when you reload the page, starts fresh each day, and can be reset at any time using the reset button below. Clearing browser data may erase saved progress.</p>
 
       <div class="progress-bar">
         <div class="progress-fill" style="width: ${percent}%"></div>
