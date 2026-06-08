@@ -208,3 +208,18 @@ body {
     border-radius: 24px;
   }
 }
+
+.coming-soon {
+  opacity: 0.78;
+}
+
+.soon-pill {
+  display: inline-block;
+  background: #f1eadc;
+  color: var(--sage-dark);
+  border: 1px solid var(--line);
+  font-family: Arial, sans-serif;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-size: 14px;
+}
