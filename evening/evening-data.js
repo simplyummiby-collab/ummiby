@@ -37,7 +37,9 @@ const eveningDuaas = [
 8. Fa innahu la yaghfirudh-dhunuba illa Anta`,
     virtues: "Whoever says it during the day with firm faith in it and dies before evening will be from the people of Paradise; and whoever says it at night with firm faith in it and dies before morning will be from the people of Paradise.",
     reference: "Sahih al-Bukhari 6306, 6323",
-    grade: "Sahih"
+    grade: "Sahih",
+
+explore: []
   },
 
   {
@@ -56,7 +58,9 @@ Recite Sūrah an-Nās - 3x`,
     transliteration: ``,
     virtues: "The Prophet ﷺ said to recite Sūrah al-Ikhlāṣ and al-Muʿawwidhatayn three times in the morning and evening; “they will serve you for every purpose.”",
     reference: "Sunan Abi Dawud 5082; Jami at-Tirmidhi 3575",
-    grade: "Sahih"
+    grade: "Sahih",
+
+explore: []
   },
 
   {
@@ -105,7 +109,9 @@ Recite Sūrah an-Nās - 3x`,
 10. Wa 'adhabin fil-qabr`,
     virtues: "",
     reference: "Sahih Muslim 2723",
-    grade: "Sahih"
+    grade: "Sahih",
+
+explore: []
   },
 
   {
@@ -136,7 +142,9 @@ Recite Sūrah an-Nās - 3x`,
 5. Wa Huwas-Sami'ul-'Alim`,
     virtues: "Whoever says this three times in the evening will not suffer sudden affliction until morning; and whoever says it in the morning will not suffer sudden affliction until evening.",
     reference: "Sunan Abi Dawud 5088; Jami at-Tirmidhi 3388",
-    grade: "Sahih"
+    grade: "Sahih",
+
+explore: []
   },
 
   {
@@ -181,7 +189,9 @@ Recite Sūrah an-Nās - 3x`,
 9. Wa a'udhu bi'azamatika an ughtala min tahti`,
     virtues: "The Messenger of Allah ﷺ never failed to utter these supplications in the evening and in the morning.",
     reference: "Sunan Abi Dawud 5074",
-    grade: "Sahih"
+    grade: "Sahih",
+
+explore: []
   },
 
   {
@@ -206,7 +216,9 @@ Recite Sūrah an-Nās - 3x`,
 4. Wa huwa 'ala kulli shay'in qadir`,
     virtues: "Whoever says this in the morning will receive reward like freeing a slave, ten good deeds will be recorded, ten sins erased, he will be raised ten degrees, and he will be guarded from Shayṭān until evening.",
     reference: "Sunan Abi Dawud 5077",
-    grade: "Sahih"
+    grade: "Sahih",
+
+explore: []
   },
 
   {
@@ -235,7 +247,9 @@ Recite Sūrah an-Nās - 3x`,
 5. Wa ilaykal-masir`,
     virtues: "",
     reference: "Sunan Abi Dawud 5068",
-    grade: "Hasan"
+    grade: "Hasan",
+
+explore: []
   },
 
   {
@@ -276,7 +290,9 @@ Recite Sūrah an-Nās - 3x`,
 8. Aw ajurrahu ila Muslim`,
     virtues: "The Prophet ﷺ instructed Abū Bakr aṣ-Ṣiddīq to say this in the morning and in the evening.",
     reference: "Sunan Abi Dawud 5067",
-    grade: "Sahih"
+    grade: "Sahih",
+
+explore: []
   },
 
   {
@@ -293,7 +309,9 @@ Recite Sūrah an-Nās - 3x`,
 2. Wa ashhadu an la ilaha illallah`,
     virtues: "",
     reference: "An-Nasā’ī, As-Sunan al-Kubrā 10331",
-    grade: "Hasan"
+    grade: "Hasan",
+
+explore: []
   },
 
   {
@@ -318,7 +336,9 @@ Recite Sūrah an-Nās - 3x`,
 4. La ilaha illa Anta`,
     virtues: "",
     reference: "Sunan Abi Dawud 5090",
-    grade: "Hasan"
+    grade: "Hasan",
+
+explore: []
   },
 
   {
@@ -339,7 +359,9 @@ Recite Sūrah an-Nās - 3x`,
 3. Wa bi Muhammadin nabiyya`,
     virtues: "Whoever says this in the morning and evening, Allah will certainly please him.",
     reference: "Sunan Abi Dawud 5072; Jami at-Tirmidhi 3389",
-    grade: "Hasan"
+    grade: "Hasan",
+
+explore: []
   },
 
   {
@@ -372,7 +394,9 @@ Recite Sūrah an-Nās - 3x`,
 6. Wa ma kana minal-mushrikin`,
     virtues: "",
     reference: "Musnad Ahmad 21144; An-Nasa'i",
-    grade: "Sahih"
+    grade: "Sahih",
+
+explore: []
   },
 
   {
@@ -397,7 +421,9 @@ Recite Sūrah an-Nās - 3x`,
 4. Wa la takilni ila nafsi tarfata 'ayn`,
     virtues: "Whenever a matter would distress him, the Prophet ﷺ would say: “O Living, O Self-Sustaining Sustainer! In Your Mercy do I seek relief.”",
     reference: "Jami at-Tirmidhi 3524",
-    grade: "Hasan"
+    grade: "Hasan",
+
+explore: []
   },
 
   {
@@ -442,7 +468,9 @@ Recite Sūrah an-Nās - 3x`,
 9. Wa Huwal-'Aliyyul-'Azim`,
     virtues: "Whoever recites Ayat al-Kursi before sleeping will have a guardian from Allah, and Shayṭān will not come near him until morning.",
     reference: "Qur'an 2:255",
-    grade: "N/A"
+    grade: "N/A",
+
+explore: []
   },
 
   {
@@ -459,6 +487,8 @@ Recite Sūrah an-Nās - 3x`,
 2. Min sharri ma khalaq`,
     virtues: "Whoever says this when stopping at a place, nothing will harm him until he leaves that place.",
     reference: "Sahih Muslim 2708",
-    grade: "Sahih"
+    grade: "Sahih",
+
+explore: []
   }
 ];
