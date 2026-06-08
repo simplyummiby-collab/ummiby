@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   ${completedCount === eveningDuaas.length ? `
     <div class="completion-message">
-      Alhamdulillah. You completed today's Evening Duaas.
+     🎉 Alhamdulillah. You completed today's Evening Duaas.
     </div>
   ` : ""}
 
