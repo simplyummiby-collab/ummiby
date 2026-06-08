@@ -82,48 +82,49 @@ document.addEventListener("DOMContentLoaded", function () {
       card.className = "duaa-card";
       if (isRead) card.classList.add("read");
 
-      card.innerHTML = `
-        <div class="duaa-label">${duaa.label || "Evening Duaa"}</div>
+    card.innerHTML = `
+  <div class="duaa-label">${duaa.label || "Evening Duaa"}</div>
 
-        <label class="read-check">
-          <input 
-            type="checkbox" 
-            ${isRead ? "checked" : ""}
-            data-index="${index}"
-          >
-          <span>Read</span>
-        </label>
+  ${duaa.count ? `<p class="reference"><strong>Repeat:</strong> ${duaa.count}</p>` : ""}
 
-        ${duaa.count ? `<p class="reference"><strong>Repeat:</strong> ${duaa.count}</p>` : ""}
+  <div class="arabic">${(duaa.arabic || "").replace(/\n/g, "<br>")}</div>
 
-        <div class="arabic">${duaa.arabic || ""}</div>
+  ${duaa.transliteration ? `
+    <div class="section-heading">Transliteration</div>
+    <p class="translation">
+      ${duaa.transliteration.replace(/\n/g, "<br>")}
+    </p>
+  ` : ""}
 
-        ${duaa.transliteration ? `
-          <p class="translation">
-            <strong>Transliteration:</strong><br>
-            ${duaa.transliteration.replace(/\n/g, "<br>")}
-          </p>
-        ` : ""}
+  <div class="section-heading">English Translation</div>
+  <p class="translation">
+    ${(duaa.translation || duaa.english || "").replace(/\n/g, "<br>")}
+  </p>
 
-        <p class="translation">
-          ${(duaa.translation || "").replace(/\n/g, "<br>")}
-        </p>
+  ${duaa.summary ? `
+    <p class="translation"><strong>Summary:</strong> ${duaa.summary}</p>
+  ` : ""}
 
-        ${duaa.summary ? `
-          <p class="translation"><strong>Summary:</strong> ${duaa.summary}</p>
-        ` : ""}
+  ${duaa.virtues ? `
+    <p class="translation"><strong>Virtue:</strong> ${duaa.virtues}</p>
+  ` : ""}
 
-        ${duaa.virtues ? `
-          <p class="translation"><strong>Virtue:</strong> ${duaa.virtues}</p>
-        ` : ""}
+  <p class="reference">
+    <strong>${duaa.reference || ""}</strong>
+    ${duaa.grade ? " — " + duaa.grade : ""}
+  </p>
 
-        <p class="reference">
-          <strong>${duaa.reference || ""}</strong>
-          ${duaa.grade ? " — " + duaa.grade : ""}
-        </p>
-      `;
-
-      eveningContainer.appendChild(card);
+  <div class="read-row">
+    <label class="read-check">
+      <input 
+        type="checkbox" 
+        ${isRead ? "checked" : ""}
+        data-index="${index}"
+      >
+      <span>Read</span>
+    </label>
+  </div>
+`;      eveningContainer.appendChild(card);
     });
 
     document.querySelectorAll(".read-check input").forEach(input => {
