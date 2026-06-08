@@ -85,7 +85,9 @@ document.addEventListener("DOMContentLoaded", function () {
     card.innerHTML = `
   <div class="duaa-label">Duaa ${index + 1}</div>
 <h3 class="duaa-title">${duaa.label || "Evening Duaa"}</h3>
-
+${duaa.summary ? `
+    <p class="translation"><strong>Summary:</strong> ${duaa.summary}</p>
+  ` : ""}
 
   ${duaa.count ? `<p class="reference"><strong>Repeat:</strong> ${duaa.count}</p>` : ""}
 
@@ -113,9 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ${(duaa.translation || duaa.english || "").replace(/\n/g, "<br>")}
   </p>
 
-  ${duaa.summary ? `
-    <p class="translation"><strong>Summary:</strong> ${duaa.summary}</p>
-  ` : ""}
+  
 
   ${duaa.virtues ? `
     <p class="translation"><strong>Virtue:</strong> ${duaa.virtues}</p>
