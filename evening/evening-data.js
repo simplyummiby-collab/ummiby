@@ -470,14 +470,14 @@ explore: []
     reference: "Qur'an 2:255",
     grade: "N/A",
 
- explore: [
-  {
-    type: "benefit",
-    title: "Read benefit: Allah legislated the recitation of ayatul kursi 8 times a day",
-    url: "https://x.com/ArrisaalahPubs/status/1881379727904227781?t=OvfIz5XPojiqMJigCsWQ9g&s=09"
-  }
+  explore: [
+      {
+        type: "benefit",
+        title: "Read benefit: Allah legislated the recitation of Ayat al-Kursi 8 times a day",
+        url: "https://x.com/ArrisaalahPubs/status/1881379727904227781?t=OvfIz5XPojiqMJigCsWQ9g&s=09"
+      }
+    ]
   },
-
   {
     label: "I seek refuge in the perfect and complete Words of Allah.",
     count: "3x",
