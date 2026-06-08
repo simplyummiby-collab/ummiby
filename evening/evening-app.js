@@ -58,16 +58,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const progressBox = document.createElement("div");
     progressBox.className = "progress-box page-title";
-    progressBox.innerHTML = `
-      <h3>${completedCount} of ${eveningDuaas.length} Read (${percent}%)</h3>
-      <p>Your progress saves on this device until you reset it. It will remain upon page reload unless you clear your browswer data.</p>
+   progressBox.innerHTML = `
+  <h3>${completedCount} of ${eveningDuaas.length} Read (${percent}%)</h3>
+  <p>Your progress saves on this device until you reset it.</p>
 
-      <div class="progress-bar">
-        <div class="progress-fill" style="width: ${percent}%"></div>
-      </div>
+  <div class="progress-bar">
+    <div class="progress-fill" style="width: ${percent}%"></div>
+  </div>
 
-      <button class="reader-btn" id="resetEveningProgressBtn">Reset Evening Progress</button>
-    `;
+  ${completedCount === eveningDuaas.length ? `
+    <div class="completion-message">
+      Alhamdulillah. You completed today's Evening Duaas.
+    </div>
+  ` : ""}
+
+  <button class="reader-btn" id="resetEveningProgressBtn">
+    Reset Evening Progress
+  </button>
+`;
 
     eveningContainer.appendChild(progressBox);
 
