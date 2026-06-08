@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const progressBox = document.createElement("div");
     progressBox.className = "progress-box page-title";
     progressBox.innerHTML = `
-      <h3>${completedCount} of ${eveningDuaas.length} Read</h3>
+      <h3>${completedCount} of ${eveningDuaas.length} Read (${percent}%)</h3>
       <p>Your progress saves on this device until you reset it. It will remain upon page reload unless you clear your browswer data.</p>
 
       <div class="progress-bar">
