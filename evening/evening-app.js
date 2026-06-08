@@ -83,7 +83,9 @@ document.addEventListener("DOMContentLoaded", function () {
       if (isRead) card.classList.add("read");
 
     card.innerHTML = `
-  <div class="duaa-label">${duaa.label || "Evening Duaa"}</div>
+  <div class="duaa-label">Duaa ${index + 1}</div>
+<h3 class="duaa-title">${duaa.label || "Evening Duaa"}</h3>
+
 
   ${duaa.count ? `<p class="reference"><strong>Repeat:</strong> ${duaa.count}</p>` : ""}
 
