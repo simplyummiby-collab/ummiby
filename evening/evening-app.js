@@ -1,4 +1,3 @@
-
 const dateOptions = {
   weekday: "long",
   year: "numeric",
@@ -15,12 +14,35 @@ try {
       day: "numeric",
       month: "long",
       year: "numeric"
-    }).format(new Date()) + " AH";
+    }).format(new Date());
 } catch {
   document.getElementById("hijriDate").textContent = "Hijri date unavailable";
 }
 
 const eveningContainer = document.getElementById("eveningDuaaContainer");
+
+function showError(message) {
+  eveningContainer.innerHTML = `
+    <div class="duaa-card">
+      <div class="duaa-label">Something needs fixing</div>
+      <p class="translation">${message}</p>
+    </div>
+  `;
+}
+
+if (!eveningContainer) {
+  alert("Missing eveningDuaaContainer in evening/index.html");
+}
+
+if (typeof eveningDuaas === "undefined") {
+  showError("The file evening-data.js is not loading, or the variable eveningDuaas is missing.");
+} else if (!Array.isArray(eveningDuaas)) {
+  showError("eveningDuaas exists, but it is not an array.");
+} else if (eveningDuaas.length === 0) {
+  showError("eveningDuaas is loading, but it has no duaas inside.");
+} else {
+  renderEveningDuaas();
+}
 
 function getEveningProgress() {
   return JSON.parse(localStorage.getItem("eveningDuaaProgress")) || {};
@@ -60,7 +82,7 @@ function renderEveningDuaas() {
     if (isRead) card.classList.add("read");
 
     card.innerHTML = `
-      <div class="duaa-label">${duaa.label}</div>
+      <div class="duaa-label">${duaa.label || "Evening Duaa"}</div>
 
       <label class="read-check">
         <input 
@@ -71,9 +93,19 @@ function renderEveningDuaas() {
         <span>Read</span>
       </label>
 
-      <div class="arabic">${duaa.arabic}</div>
-      <p class="translation">${duaa.translation}</p>
-      <p class="reference"><strong>${duaa.reference}</strong></p>
+      ${duaa.count ? `<p class="reference"><strong>Repeat:</strong> ${duaa.count}</p>` : ""}
+
+      <div class="arabic">${duaa.arabic || ""}</div>
+
+      ${duaa.transliteration ? `<p class="translation"><strong>Transliteration:</strong><br>${duaa.transliteration.replace(/\n/g, "<br>")}</p>` : ""}
+
+      <p class="translation">${(duaa.translation || "").replace(/\n/g, "<br>")}</p>
+
+      ${duaa.summary ? `<p class="translation"><strong>Summary:</strong> ${duaa.summary}</p>` : ""}
+
+      ${duaa.virtues ? `<p class="translation"><strong>Virtue:</strong> ${duaa.virtues}</p>` : ""}
+
+      <p class="reference"><strong>${duaa.reference || ""}</strong> ${duaa.grade ? " — " + duaa.grade : ""}</p>
     `;
 
     eveningContainer.appendChild(card);
@@ -91,5 +123,3 @@ function resetEveningProgress() {
   localStorage.removeItem("eveningDuaaProgress");
   renderEveningDuaas();
 }
-
-renderEveningDuaas();
