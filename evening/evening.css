@@ -189,3 +189,10 @@
   line-height: 1.6;
   margin: 0 0 18px;
 }
+
+
+.progress-box {
+  position: sticky;
+  top: 20px;
+  z-index: 10;
+}
