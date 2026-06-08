@@ -83,12 +83,15 @@ document.addEventListener("DOMContentLoaded", function () {
     document
       .getElementById("resetEveningProgressBtn")
       .addEventListener("click", resetEveningProgress);
-
+document
+  .getElementById("continueReadingBtn")
+  .addEventListener("click", continueReading);
     eveningDuaas.forEach((duaa, index) => {
       const isRead = progress[index] === true;
 
       const card = document.createElement("div");
       card.className = "duaa-card";
+      card.setAttribute("data-duaa-index", index);
       if (isRead) card.classList.add("read");
 
     card.innerHTML = `
@@ -169,4 +172,26 @@ ${duaa.summary ? `
     localStorage.removeItem("eveningDuaaProgress");
     renderEveningDuaas();
   }
+
+  function continueReading() {
+  const progress = getEveningProgress();
+
+  const firstUnreadIndex = eveningDuaas.findIndex((_, index) => !progress[index]);
+
+  if (firstUnreadIndex === -1) {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    return;
+  }
+
+  const firstUnreadCard = document.querySelector(
+    `[data-duaa-index="${firstUnreadIndex}"]`
+  );
+
+  if (firstUnreadCard) {
+    firstUnreadCard.scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  }
+}
 });
