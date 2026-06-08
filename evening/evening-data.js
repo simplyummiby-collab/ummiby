@@ -2,7 +2,7 @@ const eveningDuaas = [
   {
     label: "O Allah, You are my Lord; none has the right to be worshipped except You.",
     count: "1x",
-    summary: "Seeking forgiveness, acknowledging Allah's favors, and renewing repentance.",
+    summary: "Known as 'Sayyidul Istighfar--the master supplication for forgiveness.' Seeking forgiveness, acknowledging Allah's favors, and renewing repentance.",
     english: `1. O Allah, You are my Lord; none has the right to be worshipped except You.
 2. You created me, and I am Your servant.
 3. And I abide by Your covenant and promise as best as I am able.
