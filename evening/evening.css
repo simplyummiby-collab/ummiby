@@ -136,4 +136,25 @@
 }
 
 
+.arabic-line {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 14px;
+}
 
+.ayah-number {
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: var(--sage-dark);
+  background: #f1eadc;
+  margin-top: 10px;
+}
