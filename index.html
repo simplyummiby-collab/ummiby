@@ -18,7 +18,12 @@
 
     <nav class="nav">
       <a class="active" href="index.html">⌂ Home</a>
+      <a href="morning/">☼ Morning Duaas</a>
       <a href="evening/">☀ Evening Duaas</a>
+      <a href="daily/">♡ Daily Duaa</a>
+      <a href="sleep/">☾ Before Sleep</a>
+      <a href="kahf/">📖 Suratul Kahf</a>
+      <a href="library/">▥ Islamic Library</a>
     </nav>
 
     <div class="sidebar-note">
@@ -40,18 +45,60 @@
     </div>
 
     <section class="grid">
+
+      <div class="card coming-soon">
+        <div class="icon">🌄</div>
+        <h3>Morning Duaas</h3>
+        <p>Begin your day with morning remembrances and supplications.</p>
+        <span class="soon-pill">Coming Soon</span>
+      </div>
+
       <div class="card">
         <div class="icon">🌅</div>
         <h3>Evening Duaas</h3>
         <p>End your day with remembrance, gratitude, and calm.</p>
         <a class="btn" href="evening/">Read Now</a>
       </div>
+
+      <div class="card coming-soon">
+        <div class="icon">🌿</div>
+        <h3>Daily Duaa</h3>
+        <p>A peaceful daily duaa to read, reflect on, and make your own.</p>
+        <span class="soon-pill">Coming Soon</span>
+      </div>
+
+      <div class="card coming-soon">
+        <div class="icon">🌙</div>
+        <h3>Before Sleep</h3>
+        <p>Adhkar and duaas to close the day remembering Allah.</p>
+        <span class="soon-pill">Coming Soon</span>
+      </div>
+
+      <div class="card coming-soon">
+        <div class="icon">📖</div>
+        <h3>Suratul Kahf</h3>
+        <p>Read and reflect on Suratul Kahf, especially on Fridays.</p>
+        <span class="soon-pill">Coming Soon</span>
+      </div>
+
+      <div class="card coming-soon">
+        <div class="icon">📚</div>
+        <h3>Islamic Library</h3>
+        <p>Your notes, references, benefits, and collected resources.</p>
+        <span class="soon-pill">Coming Soon</span>
+      </div>
+
     </section>
   </main>
 </div>
 
 <script>
-const dateOptions = { weekday: "long", year: "numeric", month: "long", day: "numeric" };
+const dateOptions = {
+  weekday: "long",
+  year: "numeric",
+  month: "long",
+  day: "numeric"
+};
 
 document.getElementById("todayDate").textContent =
   new Date().toLocaleDateString("en-US", dateOptions);
