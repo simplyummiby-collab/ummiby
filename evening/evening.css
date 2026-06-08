@@ -31,10 +31,6 @@
   margin-top: 0;
 }
 
-.progress-box {
-  padding: 30px;
-  margin-bottom: 22px;
-}
 
 .progress-box h3 {
   margin: 0 0 8px;
@@ -194,13 +190,20 @@
 .progress-box {
   position: sticky;
   top: 16px;
-  z-index: 100;
+  z-index: 9999;
   background: #fffdf8;
+  border: 1px solid var(--line);
   border-radius: 24px;
   padding: 30px;
   margin-bottom: 22px;
   box-shadow: 0 12px 24px rgba(80,70,50,0.12);
 }
-.progress-box {
-  box-shadow: 0 12px 24px rgba(80,70,50,0.12);
+.progress-box::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -18px;
+  height: 18px;
+  background: #f8f3ea;
 }
