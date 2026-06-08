@@ -97,7 +97,7 @@ body {
   padding: 56px;
   background:
     linear-gradient(to right, rgba(248,243,234,0.9), rgba(248,243,234,0.45)),
-    url("https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=1600&q=80");
+    url("assets/backgrounds/john-o-nelio-8iq2fLo0KXc-unsplash.jpg");
   background-size: cover;
   background-position: center;
 }
