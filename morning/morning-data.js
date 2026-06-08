@@ -419,6 +419,12 @@ Recite Sūrah an-Nās - 3x`,
     virtues: "Whoever recites Ayat al-Kursi in the morning will be protected until evening.",
     reference: "Qur'an 2:255",
     grade: "N/A",
-    explore: []
+    explore: [
+  {
+    type: "benefit",
+    title: "Allah legislated the recitation of ayatul kursi 8 times a day",
+    url: "https://x.com/ArrisaalahPubs/status/1881379727904227781?t=OvfIz5XPojiqMJigCsWQ9g&s=09"
+  }
+]
   }
 ];
