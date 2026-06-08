@@ -26,7 +26,14 @@
   color: var(--muted);
   line-height: 1.7;
 }
-
+.page-hero {
+  background:
+    linear-gradient(to right, rgba(248,243,234,0.9), rgba(248,243,234,0.45)),
+    url("../assets/backgrounds/evening-image.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 22px;
+}
 .evening-date {
   margin-top: 0;
 }
