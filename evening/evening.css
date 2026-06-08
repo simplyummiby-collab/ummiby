@@ -158,3 +158,20 @@
   background: #f1eadc;
   margin-top: 10px;
 }
+.duaa-title {
+  margin: 0 0 18px;
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--sage-dark);
+}
+
+.summary-box {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--muted);
+  background: #f6f0e4;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 16px 18px;
+  margin-bottom: 24px;
+}
