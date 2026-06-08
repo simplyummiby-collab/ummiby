@@ -10,6 +10,7 @@
     linear-gradient(to right, rgba(248,243,234,0.9), rgba(248,243,234,0.45)),
     url("../assets/hero-images/evening-hero-sunset-beach.jpg");
   background-size: cover;
+  background-position: center bottom;
   background-position: center;
   margin-bottom: 22px;
 }
