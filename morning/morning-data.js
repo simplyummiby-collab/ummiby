@@ -1,6 +1,6 @@
 const morningDuaas = [
   {
-    label: "O Allah, You are my Lord; none has the right to be worshipped except You...ok ",
+    label: "O Allah, You are my Lord; none has the right to be worshipped except You... ",
     count: "1x",
      summary: "Known as 'Sayyidul Istighfar--the master supplication for forgiveness.' Seeking forgiveness, acknowledging Allah's favors, and renewing repentance.",
     arabic: `اللَّهُمَّ أَنْتَ رَبِّي لَا إِلَٰهَ إِلَّا أَنْتَ
