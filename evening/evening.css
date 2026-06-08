@@ -202,3 +202,6 @@
   margin-right: -34px;
   padding: 28px 34px;
 }
+.progress-box {
+  box-shadow: 0 12px 24px rgba(80,70,50,0.12);
+}
