@@ -118,8 +118,11 @@ ${duaa.summary ? `
   
 
   ${duaa.virtues ? `
-    <p class="translation"><strong>Virtue:</strong> ${duaa.virtues}</p>
-  ` : ""}
+  <div class="section-heading">Virtue</div>
+  <p class="translation">
+    ${duaa.virtues}
+  </p>
+` : ""}
 
   <p class="reference">
     <strong>${duaa.reference || ""}</strong>
