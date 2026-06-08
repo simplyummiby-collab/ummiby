@@ -1,1 +1,120 @@
 
+.page-title,
+.duaa-card {
+  background: rgba(255,253,248,0.94);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  box-shadow: 0 10px 24px rgba(80,70,50,0.06);
+}
+
+.page-title {
+  padding: 34px;
+  margin-bottom: 22px;
+}
+
+.page-title h2 {
+  margin: 0 0 10px;
+  font-size: 42px;
+  font-weight: 400;
+  color: var(--sage-dark);
+}
+
+.page-title p,
+.translation,
+.reference {
+  font-family: Arial, sans-serif;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.evening-date {
+  margin-top: 0;
+}
+
+.progress-box {
+  padding: 30px;
+  margin-bottom: 22px;
+}
+
+.progress-box h3 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--sage-dark);
+}
+
+.progress-bar {
+  height: 14px;
+  background: #eee4d2;
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 18px 0;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--sage);
+}
+
+.duaa-card {
+  padding: 34px;
+  margin-bottom: 20px;
+}
+
+.duaa-card.read {
+  opacity: 0.72;
+}
+
+.duaa-label {
+  font-family: Arial, sans-serif;
+  color: var(--sage);
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.duaa-card.read .duaa-label::after {
+  content: " ✓";
+  color: var(--sage);
+}
+
+.read-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-family: Arial, sans-serif;
+  background: #f1eadc;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 10px 18px;
+  margin-bottom: 22px;
+  cursor: pointer;
+  color: var(--sage-dark);
+}
+
+.read-check input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--sage);
+}
+
+.arabic {
+  direction: rtl;
+  text-align: right;
+  font-size: 32px;
+  line-height: 2;
+  margin-bottom: 22px;
+}
+
+.reference {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .arabic { font-size: 26px; }
+
+  .page-title h2 {
+    font-size: 34px;
+  }
+}
