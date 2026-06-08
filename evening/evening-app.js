@@ -72,9 +72,10 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
   ` : ""}
 
-  <button class="reader-btn" id="resetEveningProgressBtn">
-    Reset Evening Progress
-  </button>
+  <div class="progress-actions split">
+  <button class="reader-btn subtle-btn" id="resetEveningProgressBtn">Reset</button>
+  <button class="reader-btn" id="continueReadingBtn">Continue Reading</button>
+</div>
 `;
 
     eveningContainer.appendChild(progressBox);
