@@ -429,7 +429,7 @@ explore: []
   {
     label: "Allah — none has the right to be worshipped except Him, the Ever-Living, the Self-Subsisting Sustainer.",
     count: "1x",
-    summary: "Reflecting upon Allah's greatness, knowledge, power, and protection.",
+    summary: "Ayaatul Kursi (2:255) Reflecting upon Allah's greatness, knowledge, power, and protection.",
     english: `1. Allah — none has the right to be worshipped except Him, the Ever-Living, the Self-Subsisting Sustainer.
 2. Neither drowsiness nor sleep overtakes Him.
 3. To Him belongs whatever is in the heavens and whatever is in the earth.
