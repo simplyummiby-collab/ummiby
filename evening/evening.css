@@ -218,3 +218,13 @@
   line-height: 1.7;
   text-align: center;
 }
+.progress-actions.split {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.subtle-btn {
+  opacity: 0.8;
+}
