@@ -87,7 +87,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   ${duaa.count ? `<p class="reference"><strong>Repeat:</strong> ${duaa.count}</p>` : ""}
 
-  <div class="arabic">${(duaa.arabic || "").replace(/\n/g, "<br>")}</div>
+ <div class="arabic">
+  ${(duaa.arabic || "")
+    .split("\n")
+    .map((line, i) => `
+      <div class="arabic-line">
+        <span class="ayah-number">${i + 1}</span>
+        <span>${line}</span>
+      </div>
+    `)
+    .join("")}
+</div>
 
   ${duaa.transliteration ? `
     <div class="section-heading">Transliteration</div>
