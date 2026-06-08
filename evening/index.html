@@ -1,1 +1,585 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ummiby Sanctuary</title>
+
+<style>
+:root {
+  --cream: #f8f3ea;
+  --soft: #fffdf8;
+  --sage: #6f7f4f;
+  --sage-dark: #3d4b31;
+  --line: #ddd2bf;
+  --text: #1f241b;
+  --muted: #62685b;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--text);
+  background: linear-gradient(135deg, #f7efe2, #fffaf1);
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  min-height: 100vh;
+}
+
+/* LEFT NAV */
+
+.sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  background: rgba(255, 253, 248, 0.9);
+  border-right: 1px solid var(--line);
+  padding: 32px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo .mark {
+  font-size: 42px;
+  color: var(--sage);
+}
+
+.logo h1 {
+  margin: 6px 0 0;
+  font-size: 38px;
+  font-weight: 400;
+  color: var(--sage-dark);
+}
+
+.logo p {
+  margin: 4px 0 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nav button {
+  border: none;
+  background: transparent;
+  text-align: left;
+  color: var(--text);
+  font-size: 18px;
+  padding: 16px 18px;
+  border-radius: 14px;
+  cursor: pointer;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.nav button.active,
+.nav button:hover {
+  background: #e9e8d9;
+  color: var(--sage-dark);
+}
+
+.sidebar-note {
+  margin-top: auto;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 24px;
+  text-align: center;
+  background: #fffaf2;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/* MAIN */
+
+.main {
+  padding: 34px;
+}
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+.hero {
+  min-height: 300px;
+  border-radius: 28px;
+  padding: 56px;
+  background:
+    linear-gradient(to right, rgba(248,243,234,0.9), rgba(248,243,234,0.45)),
+    url("https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h2 {
+  font-size: 46px;
+  font-weight: 400;
+  margin: 0 0 14px;
+  color: var(--sage-dark);
+}
+
+.hero p {
+  max-width: 420px;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.date-pill {
+  margin: -32px auto 30px;
+  max-width: 720px;
+  background: rgba(255,255,255,0.92);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 18px 26px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 12px 30px rgba(80,70,50,0.12);
+  position: relative;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 1fr));
+  gap: 22px;
+}
+
+.card {
+  background: rgba(255,253,248,0.92);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 30px 24px;
+  text-align: center;
+  min-height: 260px;
+  box-shadow: 0 10px 24px rgba(80,70,50,0.06);
+}
+
+.icon {
+  width: 92px;
+  height: 92px;
+  border-radius: 50% 50% 8px 8px;
+  margin: 0 auto 18px;
+  display: grid;
+  place-items: center;
+  font-size: 42px;
+  background: #eee4d2;
+}
+
+.card h3 {
+  font-size: 28px;
+  font-weight: 400;
+  margin: 0 0 12px;
+}
+
+.card p {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.card button,
+.reader-btn {
+  border: none;
+  background: var(--sage);
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 11px 28px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.card button:hover,
+.reader-btn:hover {
+  background: var(--sage-dark);
+}
+
+/* EVENING SECTION */
+
+.page-title {
+  background: rgba(255,253,248,0.9);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 34px;
+  margin-bottom: 22px;
+}
+
+.page-title h2 {
+  margin: 0 0 10px;
+  font-size: 42px;
+  font-weight: 400;
+  color: var(--sage-dark);
+}
+
+.page-title p {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.duaa-card {
+  background: rgba(255,253,248,0.94);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 34px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 24px rgba(80,70,50,0.06);
+}
+
+.duaa-label {
+  font-family: Arial, sans-serif;
+  color: var(--sage);
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.arabic {
+  direction: rtl;
+  text-align: right;
+  font-size: 32px;
+  line-height: 2;
+  margin-bottom: 22px;
+}
+
+.translation,
+.reference {
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.reference {
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.reader-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.bottom-note {
+  margin-top: 18px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 16px 22px;
+  background: rgba(255,253,248,0.8);
+  font-family: Arial, sans-serif;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+  .app {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: static;
+    height: auto;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 34px;
+  }
+
+  .hero h2 {
+    font-size: 34px;
+  }
+
+  .date-pill {
+    flex-direction: column;
+    align-items: center;
+    border-radius: 24px;
+  }
+
+  .arabic {
+    font-size: 26px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="app">
+
+  <aside class="sidebar">
+    <div class="logo">
+      <div class="mark">☾</div>
+      <h1>ummiby</h1>
+      <p>Sanctuary</p>
+    </div>
+
+    <nav class="nav">
+      <button class="active" onclick="showSection('home', this)">⌂ Home</button>
+      <button onclick="showSection('morning', this)">☼ Morning Duaas</button>
+      <button onclick="showSection('evening', this)">☀ Evening Duaas</button>
+      <button onclick="showSection('daily', this)">♡ Daily Duaa</button>
+      <button onclick="showSection('sleep', this)">☾ Before Sleep</button>
+      <button onclick="showSection('kahf', this)">📖 Suratul Kahf</button>
+      <button onclick="showSection('library', this)">▥ Islamic Library</button>
+    </nav>
+
+    <div class="sidebar-note">
+      And remember your Lord within yourself in humility and fear.
+      <br><br>
+      <strong>Qur’an 7:205</strong>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <!-- HOME SECTION -->
+    <section id="home" class="section active">
+
+      <section class="hero">
+        <h2>Assalamu Alaikum,<br>Sherrie ♥</h2>
+        <p>A quiet space to remember, reflect, and reconnect.</p>
+      </section>
+
+      <div class="date-pill">
+        <span id="todayDate"></span>
+        <span id="hijriDate"></span>
+        <span>▦</span>
+      </div>
+
+      <section class="grid">
+
+        <div class="card">
+          <div class="icon">🌄</div>
+          <h3>Morning Duaas</h3>
+          <p>Start your day with beautiful remembrances and supplications.</p>
+          <button onclick="showSectionByName('morning')">Read Now</button>
+        </div>
+
+        <div class="card">
+          <div class="icon">🌅</div>
+          <h3>Evening Duaas</h3>
+          <p>End your day with remembrance, gratitude, and calm.</p>
+          <button onclick="showSectionByName('evening')">Read Now</button>
+        </div>
+
+        <div class="card">
+          <div class="icon">🌿</div>
+          <h3>Daily Duaa</h3>
+          <p>A new duaa each day to read, reflect, and make your own.</p>
+          <button onclick="showSectionByName('daily')">Read Today</button>
+        </div>
+
+        <div class="card">
+          <div class="icon">🌙</div>
+          <h3>Before Sleep</h3>
+          <p>Adhkar and duaas to help you end your day remembering Allah.</p>
+          <button onclick="showSectionByName('sleep')">Read Now</button>
+        </div>
+
+        <div class="card">
+          <div class="icon">📖</div>
+          <h3>Suratul Kahf</h3>
+          <p>Read and reflect on the light of Surah Kahf every Friday.</p>
+          <button onclick="showSectionByName('kahf')">Read Now</button>
+        </div>
+
+        <div class="card">
+          <div class="icon">📚</div>
+          <h3>Islamic Library</h3>
+          <p>Your collection of notes, resources, and beneficial reminders.</p>
+          <button onclick="showSectionByName('library')">Explore</button>
+        </div>
+
+      </section>
+
+      <div class="bottom-note">
+        Take it slow. You’re not behind. What matters is turning to Allah, one moment at a time.
+      </div>
+
+    </section>
+
+    <!-- EVENING SECTION -->
+    <section id="evening" class="section">
+
+      <div class="page-title">
+        <h2>Evening Duaas 🌅</h2>
+        <p>
+          A calm place to read your evening adhkar without leaving the sanctuary page.
+          Replace the sample cards below with your actual evening duaas.
+        </p>
+      </div>
+
+      <div id="eveningDuaaContainer"></div>
+
+    </section>
+
+    <!-- PLACEHOLDER SECTIONS -->
+    <section id="morning" class="section">
+      <div class="page-title">
+        <h2>Morning Duaas 🌄</h2>
+        <p>This section can be added next.</p>
+      </div>
+    </section>
+
+    <section id="daily" class="section">
+      <div class="page-title">
+        <h2>Daily Duaa 🌿</h2>
+        <p>This can later pull one duaa based on the date.</p>
+      </div>
+    </section>
+
+    <section id="sleep" class="section">
+      <div class="page-title">
+        <h2>Before Sleep 🌙</h2>
+        <p>This section can hold your sleep duaas.</p>
+      </div>
+    </section>
+
+    <section id="kahf" class="section">
+      <div class="page-title">
+        <h2>Suratul Kahf 📖</h2>
+        <p>This can later open your Suratul Kahf reader inside this same layout.</p>
+      </div>
+    </section>
+
+    <section id="library" class="section">
+      <div class="page-title">
+        <h2>Islamic Library 📚</h2>
+        <p>This can become your notes and resource area.</p>
+      </div>
+    </section>
+
+  </main>
+
+</div>
+
+<script>
+/* DATE */
+
+const dateOptions = {
+  weekday: "long",
+  year: "numeric",
+  month: "long",
+  day: "numeric"
+};
+
+document.getElementById("todayDate").textContent =
+  new Date().toLocaleDateString("en-US", dateOptions);
+
+try {
+  document.getElementById("hijriDate").textContent =
+    new Intl.DateTimeFormat("en-TN-u-ca-islamic", {
+      day: "numeric",
+      month: "long",
+      year: "numeric"
+    }).format(new Date()) + " AH";
+} catch {
+  document.getElementById("hijriDate").textContent = "Hijri date unavailable";
+}
+
+/* SECTION SWITCHING */
+
+function showSection(sectionId, button) {
+  document.querySelectorAll(".section").forEach(section => {
+    section.classList.remove("active");
+  });
+
+  document.getElementById(sectionId).classList.add("active");
+
+  document.querySelectorAll(".nav button").forEach(btn => {
+    btn.classList.remove("active");
+  });
+
+  if (button) {
+    button.classList.add("active");
+  }
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function showSectionByName(sectionId) {
+  const buttons = document.querySelectorAll(".nav button");
+
+  buttons.forEach(button => {
+    if (button.textContent.toLowerCase().includes(sectionId)) {
+      showSection(sectionId, button);
+    }
+  });
+}
+
+/* EVENING DUAAS */
+/* Replace these with your real Evening Duaa data */
+
+const eveningDuaas = [
+  {
+    label: "Evening Duaa 1",
+    arabic: "ضع النص العربي هنا",
+    translation: "Put the English meaning here.",
+    reference: "Reference here"
+  },
+  {
+    label: "Evening Duaa 2",
+    arabic: "ضع النص العربي هنا",
+    translation: "Put the English meaning here.",
+    reference: "Reference here"
+  },
+  {
+    label: "Evening Duaa 3",
+    arabic: "ضع النص العربي هنا",
+    translation: "Put the English meaning here.",
+    reference: "Reference here"
+  }
+];
+
+const eveningContainer = document.getElementById("eveningDuaaContainer");
+
+eveningDuaas.forEach((duaa, index) => {
+  const card = document.createElement("div");
+  card.className = "duaa-card";
+
+  card.innerHTML = `
+    <div class="duaa-label">${duaa.label}</div>
+    <div class="arabic">${duaa.arabic}</div>
+    <p class="translation">${duaa.translation}</p>
+    <p class="reference"><strong>${duaa.reference}</strong></p>
+
+    <div class="reader-actions">
+      <button class="reader-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Back to Top</button>
+      <button class="reader-btn" onclick="showSectionByName('home')">Home</button>
+    </div>
+  `;
+
+  eveningContainer.appendChild(card);
+});
+</script>
+
+</body>
+</html>
