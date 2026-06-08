@@ -10,7 +10,7 @@
     linear-gradient(to right, rgba(248,243,234,0.9), rgba(248,243,234,0.45)),
     url("../assets/hero-images/morning-hero-sunrise-beach.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
   margin-bottom: 22px;
 }
 
