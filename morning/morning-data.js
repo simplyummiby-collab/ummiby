@@ -422,7 +422,7 @@ Recite Sūrah an-Nās - 3x`,
     explore: [
   {
     type: "benefit",
-    title: "Allah legislated the recitation of ayatul kursi 8 times a day",
+    title: "Read benefit: Allah legislated the recitation of ayatul kursi 8 times a day",
     url: "https://x.com/ArrisaalahPubs/status/1881379727904227781?t=OvfIz5XPojiqMJigCsWQ9g&s=09"
   }
 ]
