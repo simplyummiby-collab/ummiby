@@ -93,6 +93,106 @@ const morningDuaas = [
     virtues: "The Prophet ﷺ said: “I recited four words three times after I left you; if these are weighed against what you have recited since morning, these would outweigh them.”",
     reference: "Sahih Muslim 2726",
     grade: "Sahih"
+  },
+    {
+    label: "Recite Sūrah al-Ikhlāṣ, al-Falaq, and an-Nās.",
+    count: "3x",
+    summary: "Seeking protection through the recitation of the Qur'an.",
+    arabic: `قُلْ هُوَ اللَّهُ أَحَدٌ
+وَالْمُعَوِّذَتَيْنِ
+ثَلَاثَ مَرَّاتٍ`,
+    transliteration: ``,
+    translation: `Recite Sūrah al-Ikhlāṣ - 3x.
+Recite Sūrah al-Falaq - 3x.
+Recite Sūrah an-Nās - 3x`,
+    virtues: "The Prophet ﷺ said to recite Sūrah al-Ikhlāṣ and al-Muʿawwidhatayn three times in the morning and evening; “they will serve you for every purpose.”",
+    reference: "Sunan Abi Dawud 5082; Jami at-Tirmidhi 3575",
+    grade: "Sahih"
+  },
+
+  {
+    label: "O Allah, by Your aid we enter the morning.",
+    count: "1x",
+    summary: "Remembering that life, death, and resurrection are in Allah's hands.",
+    arabic: `اللَّهُمَّ بِكَ أَصْبَحْنَا
+وَبِكَ أَمْسَيْنَا
+وَبِكَ نَحْيَا
+وَبِكَ نَمُوتُ
+وَإِلَيْكَ النُّشُورُ`,
+    transliteration: `1. Allahumma bika asbahna
+2. Wa bika amsayna
+3. Wa bika nahya
+4. Wa bika namut
+5. Wa ilaykan-nushur`,
+    translation: `1. O Allah, by Your aid we enter the morning.
+2. And by Your aid we enter the evening.
+3. By Your leave we live.
+4. And by Your leave we die.
+5. And to You is the Resurrection.`,
+    virtues: "",
+    reference: "Sunan Abi Dawud 5068",
+    grade: "Hasan"
+  },
+
+  {
+    label: "In the Name of Allah.",
+    count: "3x",
+    summary: "Seeking Allah's protection from harm and affliction.",
+    arabic: `بِسْمِ اللَّهِ
+الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ
+فِي الْأَرْضِ
+وَلَا فِي السَّمَاءِ
+وَهُوَ السَّمِيعُ الْعَلِيمُ`,
+    transliteration: `1. Bismillah
+2. Alladhi la yadurru ma'a ismihi shay'un
+3. Fil-ard
+4. Wa la fis-sama'
+5. Wa Huwas-Sami'ul-'Alim`,
+    translation: `1. In the Name of Allah,
+2. with Whose Name nothing can cause harm,
+3. in the earth,
+4. nor in the heavens,
+5. and He is the All-Hearing,
+6. the All-Knowing.`,
+    virtues: "Whoever says this three times in the evening will not suffer sudden affliction until morning; and whoever says it in the morning will not suffer sudden affliction until evening.",
+    reference: "Sunan Abi Dawud 5088; Jami at-Tirmidhi 3388",
+    grade: "Sahih"
+  },
+
+  {
+    label: "O Allah, I ask You for well-being in this world and the Hereafter.",
+    count: "1x",
+    summary: "Asking Allah for well-being, safety, and protection in all affairs.",
+    arabic: `اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَافِيَةَ فِي الدُّنْيَا وَالْآخِرَةِ
+اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي دِينِي وَدُنْيَايَ وَأَهْلِي وَمَالِي
+اللَّهُمَّ اسْتُرْ عَوْرَاتِي وَآمِنْ رَوْعَاتِي
+اللَّهُمَّ احْفَظْنِي مِنْ بَيْنِ يَدَيَّ
+وَمِنْ خَلْفِي
+وَعَنْ يَمِينِي
+وَعَنْ شِمَالِي
+وَمِنْ فَوْقِي
+وَأَعُوذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِي`,
+    transliteration: `1. Allahumma inni as'alukal-'afiyata fid-dunya wal-akhirah
+2. Allahumma inni as'alukal-'afwa wal-'afiyah fi dini wa dunyaya wa ahli wa mali
+3. Allahummastur 'awrati wa amin raw'ati
+4. Allahummahfazni min bayni yadayya
+5. Wa min khalfi
+6. Wa 'an yamini
+7. Wa 'an shimali
+8. Wa min fawqi
+9. Wa a'udhu bi'azamatika an ughtala min tahti`,
+    translation: `1. O Allah, I ask You for well-being in this world and the Hereafter.
+2. O Allah, I ask You for pardon and well-being in my religion, my worldly life, my family, and my wealth.
+3. O Allah, conceal my faults and calm my fears.
+4. O Allah, protect me from in front of me,
+5. and from behind me,
+6. and from my right,
+7. and from my left,
+8. and from above me,
+9. and I seek refuge in Your Greatness from being unexpectedly destroyed from beneath me.`,
+    virtues: "The Messenger of Allah ﷺ never failed to utter these supplications in the evening and in the morning.",
+    reference: "Sunan Abi Dawud 5074",
+    grade: "Sahih"
   }
 
   // I’ll send the rest in the next message so the file is easier to paste safely.
