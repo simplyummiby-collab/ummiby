@@ -193,7 +193,216 @@ Recite Sūrah an-Nās - 3x`,
     virtues: "The Messenger of Allah ﷺ never failed to utter these supplications in the evening and in the morning.",
     reference: "Sunan Abi Dawud 5074",
     grade: "Sahih"
-  }
+  },
+  {
+    label: "None has the right to be worshipped except Allah alone, having no partner.",
+    count: "10x, 1x, or 100x",
+    summary: "Renewing tawhid and remembering Allah's complete sovereignty.",
+    arabic: `لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ
+لَهُ الْمُلْكُ
+وَلَهُ الْحَمْدُ
+وَهُوَ عَلَىٰ كُلِّ شَيْءٍ قَدِيرٌ`,
+    transliteration: `1. La ilaha illallahu wahdahu la sharika lah
+2. Lahul-mulku
+3. Wa lahul-hamd
+4. Wa huwa 'ala kulli shay'in qadir`,
+    translation: `1. None has the right to be worshipped except Allah alone, having no partner.
+2. Sovereignty belongs to Him.
+3. And all praise belongs to Him.
+4. And He has power over all things.`,
+    virtues: "Whoever says this in the morning will receive reward like freeing a slave, ten good deeds will be recorded, ten sins erased, he will be raised ten degrees, and he will be guarded from Shaytan until evening.",
+    reference: "Sunan Abi Dawud 5077",
+    grade: "Sahih"
+  },
 
-  // I’ll send the rest in the next message so the file is easier to paste safely.
+  {
+    label: "O Allah, Creator and Originator of the heavens and the earth.",
+    count: "1x",
+    summary: "Seeking refuge from personal shortcomings and the plots of Shaytan.",
+    arabic: `اللَّهُمَّ فَاطِرَ السَّمَاوَاتِ وَالْأَرْضِ
+عَالِمَ الْغَيْبِ وَالشَّهَادَةِ
+لَا إِلَٰهَ إِلَّا أَنْتَ
+رَبَّ كُلِّ شَيْءٍ وَمَلِيكَهُ
+أَعُوذُ بِكَ مِنْ شَرِّ نَفْسِي
+وَمِنْ شَرِّ الشَّيْطَانِ وَشِرْكِهِ
+وَأَنْ أَقْتَرِفَ عَلَىٰ نَفْسِي سُوءًا
+أَوْ أَجُرَّهُ إِلَىٰ مُسْلِمٍ`,
+    transliteration: `1. Allahumma Fatiras-samawati wal-ard
+2. 'Alimal-ghaybi wash-shahadah
+3. La ilaha illa Anta
+4. Rabba kulli shay'in wa malikah
+5. A'udhu bika min sharri nafsi
+6. Wa min sharrish-shaytani wa shirkih
+7. Wa an aqtarifa 'ala nafsi su'an
+8. Aw ajurrahu ila Muslim`,
+    translation: `1. O Allah, Creator and Originator of the heavens and the earth.
+2. Knower of the hidden and the apparent.
+3. None has the right to be worshipped except You.
+4. Lord and Sovereign of everything.
+5. I seek refuge in You from the evil of myself.
+6. And from the evil of Satan and his shirk.
+7. And from committing evil against myself.
+8. Or bringing it upon a Muslim.`,
+    virtues: "The Prophet ﷺ instructed Abu Bakr as-Siddiq to say this in the morning and in the evening.",
+    reference: "Sunan Abi Dawud 5067",
+    grade: "Sahih"
+  },
+
+  {
+    label: "I have entered the morning praising You.",
+    count: "3x",
+    summary: "Beginning the day with praise and testimony of tawhid.",
+    arabic: `أَصْبَحْتُ أُثْنِي عَلَيْكَ حَمْدًا
+وَأَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا اللَّهُ`,
+    transliteration: `1. Asbahtu uthni 'alayka hamdan
+2. Wa ashhadu an la ilaha illallah`,
+    translation: `1. I have entered the morning praising You.
+2. And I bear witness that none has the right to be worshipped except Allah.`,
+    virtues: "",
+    reference: "An-Nasa'i, As-Sunan al-Kubra 10331",
+    grade: "Hasan"
+  },
+
+  {
+    label: "We have entered the morning upon the true religion of Islam.",
+    count: "1x",
+    summary: "Beginning the day upon Islam, sincerity, and submission to Allah.",
+    arabic: `أَصْبَحْنَا عَلَى فِطْرَةِ الْإِسْلَامِ
+وَعَلَى كَلِمَةِ الْإِخْلَاصِ
+وَعَلَى دِينِ نَبِيِّنَا مُحَمَّدٍ ﷺ
+وَعَلَى مِلَّةِ أَبِينَا إِبْرَاهِيمَ
+حَنِيفًا مُسْلِمًا
+وَمَا كَانَ مِنَ الْمُشْرِكِينَ`,
+    transliteration: `1. Asbahna 'ala fitratil-Islam
+2. Wa 'ala kalimatil-ikhlas
+3. Wa 'ala dini nabiyyina Muhammad ﷺ
+4. Wa 'ala millati abina Ibrahim
+5. Hanifan musliman
+6. Wa ma kana minal-mushrikin`,
+    translation: `1. We have entered the morning upon the true religion of Islam.
+2. And upon the word of sincere worship.
+3. And upon the religion of our Prophet Muhammad ﷺ.
+4. And upon the way of our forefather Ibrahim.
+5. He was upright, submitting to Allah.
+6. And he was not from those who associate others with Allah.`,
+    virtues: "",
+    reference: "Musnad Ahmad 21144",
+    grade: "Sahih"
+  },
+    {
+    label: "O Allah, grant me health in my body.",
+    count: "3x",
+    summary: "Asking Allah for health, hearing, sight, and well-being.",
+    arabic: `اللَّهُمَّ عَافِنِي فِي بَدَنِي
+اللَّهُمَّ عَافِنِي فِي سَمْعِي
+اللَّهُمَّ عَافِنِي فِي بَصَرِي
+لَا إِلَٰهَ إِلَّا أَنْتَ`,
+    transliteration: `1. Allahumma 'afini fi badani
+2. Allahumma 'afini fi sam'i
+3. Allahumma 'afini fi basari
+4. La ilaha illa Anta`,
+    translation: `1. O Allah, grant me health in my body.
+2. O Allah, grant me good hearing.
+3. O Allah, grant me good eyesight.
+4. None has the right to be worshipped except You.`,
+    virtues: "",
+    reference: "Sunan Abi Dawud 5090",
+    grade: "Hasan"
+  },
+
+  {
+    label: "I am pleased with Allah as my Lord.",
+    count: "3x",
+    summary: "Expressing contentment with Allah, Islam, and the Messenger ﷺ.",
+    arabic: `رَضِيتُ بِاللَّهِ رَبًّا
+وَبِالْإِسْلَامِ دِينًا
+وَبِمُحَمَّدٍ نَبِيًّا`,
+    transliteration: `1. Raditu billahi Rabba
+2. Wa bil-Islami dina
+3. Wa bi Muhammadin nabiyya`,
+    translation: `1. I am pleased with Allah as my Lord.
+2. And with Islam as my religion.
+3. And with Muhammad as my Prophet.`,
+    virtues: "Whoever says this in the morning and evening, Allah will certainly please him.",
+    reference: "Sunan Abi Dawud 5072; Jami at-Tirmidhi 3389",
+    grade: "Hasan"
+  },
+
+  {
+    label: "Allah is sufficient for me. None has the right to be worshipped except Him.",
+    count: "7x",
+    summary: "Entrusting all affairs to Allah and relying upon Him alone.",
+    arabic: `حَسْبِيَ اللَّهُ
+لَا إِلَٰهَ إِلَّا هُوَ
+عَلَيْهِ تَوَكَّلْتُ
+وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ`,
+    transliteration: `1. Hasbiyallahu
+2. La ilaha illa Huwa
+3. 'Alayhi tawakkaltu
+4. Wa Huwa Rabbul-'Arshil-'Azim`,
+    translation: `1. Allah is sufficient for me.
+2. None has the right to be worshipped except Him.
+3. Upon Him I rely.
+4. And He is the Lord of the Magnificent Throne.`,
+    virtues: "Whoever says this seven times in the morning and evening, Allah will suffice him regarding all that concerns him.",
+    reference: "Sunan Abi Dawud 5081",
+    grade: "Hasan"
+  },
+
+  {
+    label: "O Ever-Living One, O Self-Subsisting Sustainer of everything.",
+    count: "1x",
+    summary: "Seeking Allah's help, mercy, and rectification of all affairs.",
+    arabic: `يَا حَيُّ يَا قَيُّومُ
+بِرَحْمَتِكَ أَسْتَغِيثُ
+أَصْلِحْ لِي شَأْنِيَ كُلَّهُ
+وَلَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ`,
+    transliteration: `1. Ya Hayyu ya Qayyum
+2. Bi rahmatika astaghith
+3. Aslih li sha'ni kullahu
+4. Wa la takilni ila nafsi tarfata 'ayn`,
+    translation: `1. O Ever-Living One, O Self-Subsisting Sustainer of everything.
+2. By Your mercy I seek help.
+3. Rectify all of my affairs for me.
+4. And do not entrust me to myself for the blink of an eye.`,
+    virtues: "Whenever a matter would distress him, the Prophet ﷺ would say: 'O Living, O Self-Sustaining Sustainer! In Your Mercy do I seek relief.'",
+    reference: "Jami at-Tirmidhi 3524",
+    grade: "Hasan"
+  },
+
+  {
+    label: "Allah — none has the right to be worshipped except Him, the Ever-Living, the Self-Subsisting Sustainer.",
+    count: "1x",
+    summary: "Reflecting upon Allah's greatness, knowledge, power, and protection.",
+    arabic: `اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ
+لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ
+لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ
+مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ
+يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ
+وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ
+وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ
+وَلَا يَئُودُهُ حِفْظُهُمَا
+وَهُوَ الْعَلِيُّ الْعَظِيمُ`,
+    transliteration: `1. Allahu la ilaha illa Huwal-Hayyul-Qayyum
+2. La ta'khudhuhu sinatun wa la nawm
+3. Lahu ma fis-samawati wa ma fil-ard
+4. Man dhal-ladhi yashfa'u 'indahu illa bi idhnih
+5. Ya'lamu ma bayna aydihim wa ma khalfahum
+6. Wa la yuhituna bishay'in min 'ilmihi illa bima sha'
+7. Wasi'a Kursiyyuhus-samawati wal-ard
+8. Wa la ya'uduhu hifzuhuma
+9. Wa Huwal-'Aliyyul-'Azim`,
+    translation: `1. Allah — none has the right to be worshipped except Him, the Ever-Living, the Self-Subsisting Sustainer.
+2. Neither drowsiness nor sleep overtakes Him.
+3. To Him belongs whatever is in the heavens and whatever is in the earth.
+4. Who is it that can intercede with Him except by His permission?
+5. He knows what is before them and what is behind them.
+6. And they encompass nothing of His knowledge except what He wills.
+7. His Footstool extends over the heavens and the earth.
+8. And preserving them does not tire Him.
+9. And He is the Most High, the Magnificent.`,
+    virtues: "Whoever recites Ayat al-Kursi in the morning will be protected until evening.",
+    reference: "Qur'an 2:255",
+    grade: "N/A"
+  }// I’ll send the rest in the next message so the file is easier to paste safely.
 ];
