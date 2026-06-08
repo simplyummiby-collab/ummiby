@@ -181,3 +181,11 @@
   padding: 16px 18px;
   margin-bottom: 24px;
 }
+
+.duaa-summary {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: var(--sage-dark);
+  line-height: 1.6;
+  margin: 0 0 18px;
+}
