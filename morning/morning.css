@@ -229,3 +229,28 @@
 .subtle-btn {
   opacity: 0.8;
 }
+
+
+
+
+
+.explore-links {
+  display: grid;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.explore-link {
+  font-family: Arial, sans-serif;
+  color: var(--sage-dark);
+  text-decoration: none;
+  background: #f6f0e4;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px 14px;
+  line-height: 1.5;
+}
+
+.explore-link:hover {
+  background: #eee4d2;
+}
