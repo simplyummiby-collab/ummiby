@@ -188,10 +188,13 @@ ${duaa.summary ? `
   );
 
   if (firstUnreadCard) {
-    firstUnreadCard.scrollIntoView({
-      behavior: "smooth",
-      block: "start"
-    });
-  }
+  const yOffset = -170;
+const y =
+  firstUnreadCard.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+window.scrollTo({
+  top: y,
+  behavior: "smooth"
+});  }
 }
 });
