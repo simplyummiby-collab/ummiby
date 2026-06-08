@@ -141,7 +141,24 @@ ${duaa.summary ? `
     <strong>${duaa.reference || ""}</strong>
     ${duaa.grade ? " — " + duaa.grade : ""}
   </p>
+${duaa.explore?.length ? `
+  <div class="section-heading">📚 Explore</div>
 
+  <div class="explore-links">
+    ${duaa.explore.map(item => `
+      <a href="${item.url}" target="_blank" class="explore-link">
+        ${
+          item.type === "audio" ? "🎧" :
+          item.type === "video" ? "🎥" :
+          item.type === "benefit" ? "💡" :
+          item.type === "reading" ? "📖" :
+          "🔗"
+        }
+        ${item.title}
+      </a>
+    `).join("")}
+  </div>
+` : ""}
   <div class="read-row">
     <label class="read-check">
       <input 
