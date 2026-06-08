@@ -193,6 +193,7 @@
 
 .progress-box {
   position: sticky;
-  top: 20px;
-  z-index: 10;
+  top: 24px;
+  z-index: 50;
+  background: rgba(255, 253, 248, 0.97);
 }
