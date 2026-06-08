@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
     return JSON.parse(localStorage.getItem("morningDuaaProgress")) || {};
   }
 
-  function savemorningProgress(progress) {
+  function saveMorningProgress(progress) {
     localStorage.setItem("morningDuaaProgress", JSON.stringify(progress));
   }
 
