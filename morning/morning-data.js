@@ -388,7 +388,7 @@ Recite Sūrah an-Nās - 3x`,
   {
     label: "Allah — none has the right to be worshipped except Him, the Ever-Living, the Self-Subsisting Sustainer.",
     count: "1x",
-    summary: "Reflecting upon Allah's greatness, knowledge, power, and protection.",
+    summary: "Ayaatul Kursi (2:255) Reflecting upon Allah's greatness, knowledge, power, and protection.",
     arabic: `اللَّهُ لَا إِلَٰهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ
 لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ
 لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ
