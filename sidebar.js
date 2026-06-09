@@ -32,9 +32,9 @@ document.addEventListener("DOMContentLoaded", function () {
       </nav>
 
       <div class="sidebar-note">
-        Those who believed (in the Oneness of Allâh - Islâmic Monotheism), and whose hearts find rest in the remembrance of Allâh: verily, in the remembrance of Allâh do hearts find rest
+        Indeed, in the remembrance of Allah do hearts find rest.
         <br><br>
-        <strong>Qur’an 13:28</strong>
+        <strong>Surah Ar-Ra'd(13):28</strong>
       </div>
     </aside>
   `;
