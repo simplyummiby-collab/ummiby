@@ -32,9 +32,9 @@ document.addEventListener("DOMContentLoaded", function () {
       </nav>
 
       <div class="sidebar-note">
-        And remember your Lord within yourself in humility and fear.
+        Those who believed (in the Oneness of Allâh - Islâmic Monotheism), and whose hearts find rest in the remembrance of Allâh: verily, in the remembrance of Allâh do hearts find rest
         <br><br>
-        <strong>Qur’an 7:205</strong>
+        <strong>Qur’an 13:28</strong>
       </div>
     </aside>
   `;
